@@ -121,7 +121,7 @@ $(document).ready(function () {
 
 const portfolioObjects = [
 	{
-		title:'Форест тревел',
+		title:'Сайт Форест тревел',
 		describe:'Верстка многостраничного сайта. Сверстан учебный сайт по макету фигма. Использованы html/css, flex. Сделана мобильная адаптация, по принципу desctop-first. Количество страниц 4',
 		stack:'HTML5‚ CSS3',
 		image:'forest-travel',
@@ -137,7 +137,7 @@ const portfolioObjects = [
 		gitHubPages:'https://petryabious.github.io/Unit/'
 	},
 	{
-		title:'NFT',
+		title:'Сайт NFT',
 		describe:'Верстка лендинга. Сверстан сайт по макету фигма. Использованы html/css, flex. Сделана мобильная адаптация, по принципу desctop-first. Добавлены js скрипты: 2 слайдера(использован slick slider). Использована методология BEM.',
 		stack:'HTML5‚ CSS3, JS',
 		image:'nft',
@@ -145,7 +145,7 @@ const portfolioObjects = [
 		gitHubPages:'https://petryabious.github.io/nft/'
 	},
 	{
-		title:'Artificial Intelligence',
+		title:'Сайт Artificial Intelligence',
 		describe:'Верстка лендинга. Сверстан сайт по макету фигма. Использованы html/css, flex. Сделана мобильная адаптация, по принципу desctop-first. Добавлены js скрипты: мобильная навигация, слайдер(использован slick slider). Использована методология BEM.',
 		stack:'HTML5‚ CSS3, JS',
 		image:'AL',
@@ -153,7 +153,7 @@ const portfolioObjects = [
 		gitHubPages:'https://petryabious.github.io/AL/'
 	},
 	{
-		title:'LaslesVPN',
+		title:'Сайт LaslesVPN',
 		describe:'Верстка лендинга. Сверстан сайт по макету фигма. Использованы html/css, flex, препроцессор scss. Сделана мобильная адаптация, по принципу desctop-first. Добавлены js скрипты: мобильная навигация, слайдер(использован owl carousel 2). Использована методология BEM.',
 		stack:'HTML5‚ CSS3, JS, SCSS',
 		image:'vpn',
@@ -161,7 +161,7 @@ const portfolioObjects = [
 		gitHubPages:'https://petryabious.github.io/Leslyvpn/'
 	},
 	{
-		title:'Cалон красоты',
+		title:'Сайт Cалон красоты',
 		describe:'Верстка лендинга. Сверстан сайт по макету фигма. Использованы html/css, flex, grid, препроцессор scss. Сделана мобильная адаптация, по принципу desctop-first. Добавлены js скрипты: мобильная навигация, слайдер, табы, аккордеон, модальные окна. Использована методология BEM.',
 		stack:'HTML5‚ CSS3, JS, SCSS',
 		image:'beautySalon',
