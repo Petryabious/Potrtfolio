@@ -1,0 +1,32 @@
+.nav {
+
+}
+.nav-list {
+    display: flex;
+    column-gap: 100px;
+    font-weight: 600;
+    font-size: 20px;
+    /* Tablet big*/
+    @media (max-width: 1139px) {
+        font-size: 18px;
+        column-gap: 50px;
+    }
+    li {
+        position: relative;
+        
+        &::after {
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            content: "";
+            height: 2px;
+            background: $accent-color;
+            transition: all 0.3s ease-in;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}

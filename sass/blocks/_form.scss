@@ -1,0 +1,126 @@
+.form {
+
+    padding: 62px 50px 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 100px -10px rgba(160, 206, 237, 0.75);
+    // max-width: 540px;
+    // width: 100%;
+    
+    /* Tablet */
+    @media (max-width: 1139px) {
+        
+        padding: 62px 30px 50px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 767px) {
+        padding: 44px 15px 40px;
+    }
+}
+
+.form__item {
+    position: relative;
+    &:nth-child(2){
+        margin: 40px 0 32px 0;
+
+        /* Mobile XS */
+        @media (max-width: 767px) {
+            margin: 30px 0 30px 0;
+        }
+    }
+
+}
+
+.form__placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1;
+    color: #9D9D9D;
+    transition: all .3s ease;
+    pointer-events: none;
+    
+    &.active {
+        top: -22px;
+        font-weight: 700;
+        font-size: 16px;
+        color: #ECA73F;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 767px) {
+        font-size: 18px;
+    }
+}
+
+.form__input {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    width: 100%;
+    border-bottom: 2px solid #E5E5E5;
+    outline: none;
+    padding: 0 5px;
+
+    &:focus {
+        border-bottom: 1px solid #EF6857;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 130%;
+    }
+}
+
+input.form__input {
+    height: 39px;
+} 
+textarea.form__input {
+    height: 162px;
+    resize: none;
+    
+} 
+
+.form__btn {
+    padding: 0 40px;
+    background-color: $accent-color;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 64px;
+    border-radius: 50px;
+    transition: all .3s ease-in;
+    &:hover, & :focus {
+        background-color:  #FFEB8D;
+    }
+    &:active {
+        background-color:  #F5D22D;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 767px) {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+.error {
+    font-weight: 700;
+    font-size: 16px;
+    color: #f00;
+}
+
+.form__success {
+    h2 {
+
+        font-weight: 700;
+        font-size: 30px;
+        color: #ff6a00;
+        @media (max-width: 767px) {
+            font-size: 20px;
+        }
+    }
+}

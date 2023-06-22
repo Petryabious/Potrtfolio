@@ -1,0 +1,227 @@
+.header {
+    padding-top: 60px;
+    padding-bottom: 90px;
+    position: relative;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        padding-top: 0;
+    }
+}
+.header__navigation {
+    
+    background-color: #fff;
+    display: none;
+    /* Mobile */
+    @media (min-width: 900px) {
+        display: block;
+    }
+}
+
+.header__navigation-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navigation-links {
+    display: flex;
+    align-items: center;
+    column-gap: 26px;
+
+  svg  {
+    path {
+        transition: all .3s ease-in;
+    }
+    &:hover path {
+        fill: $accent-color;
+    }
+  }
+}
+
+
+.header__info{
+    padding-top: 82px;
+    padding-bottom: 40px;
+    
+    /* Tablet */
+    @media (max-width: 1139px) {
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+        padding-top: 15px;
+    }
+
+}
+.header__info-wrapper {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+
+    /* Mobile XS */
+    @media (max-width: 767px) {
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: stretch;
+    }
+}
+
+.header__descriptions {
+    padding-top: 15px;
+    width: 540px;
+    & >:not(:last-child) {
+        
+        /* Tablet */
+        @media (min-width: 1140px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+        width: 420px;
+        padding-top: 0;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        width: 100%;
+        max-width: 354px;
+    }
+    /* Mobile XS */
+
+
+}
+
+.header__title {
+    @media (max-width: 1139px) {
+        margin-bottom: 20px;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin-bottom: 10px;
+        width: 288px;
+    }
+    /* Mobile XS */
+    @media (max-width: 767px) {
+        margin-bottom: 0;
+        width: 224px;
+    }
+}
+
+.header__text {
+    p {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.6;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+    @media (max-width: 1139px) {
+        margin-bottom: 28px;
+        p {
+            font-size: 18px;
+        }
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin-bottom: 0;
+        p {
+            font-size: 16px;
+        }
+    }
+
+    /* Mobile XS */
+    @media (max-width: 767px) {
+        display: none;
+    }
+
+}
+
+
+.header__links {
+    display: flex;
+    column-gap: 20px;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        display: none;
+    }
+}
+
+.header__img {
+    box-shadow: 40px 40px 10px 20px rgba(255, 255, 255, 0.5);
+    /* box-shadow: 23px 23px 10px 20px rgb(0, 0, 0); */
+    position: relative;
+    z-index: 3;
+    img {
+        width: 475px;
+        height: 410px;
+        object-fit: cover;
+        
+        /* Tablet */
+        @media (max-width: 1139px) {
+            width: 376px;
+            height: 325px;
+            box-shadow: none ;
+        }
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            width: 290px;
+            height: 250px;
+        }
+
+        /* Mobile XS */
+        @media (max-width: 767px) {
+            margin-bottom: 10px;
+        }
+    }
+
+
+
+    p {
+        display: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+
+        /* Mobile XS */
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
+}
+
+
+.header__banner {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    margin-top: -192px;
+    margin-bottom: -126px;
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+        margin-top: -89px;
+        margin-bottom: -99px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin-bottom: -104px;
+    }
+    /* Mobile XS */
+    @media (max-width: 767px) {
+        margin: 0 0 -78px 0;
+    }
+}
+
+

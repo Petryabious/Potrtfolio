@@ -1,0 +1,36 @@
+.work-processing {
+    padding: 70px 0 90px;
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+        padding: 60px 0 70px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        padding: 40px 0;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 767px) {
+        
+    }
+}
+
+.work-processing__title {
+    margin-bottom: 70px;
+    text-align: center;
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+        margin-bottom: 50px;
+    }
+
+    @media (max-width: 899px) {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+}
+
+

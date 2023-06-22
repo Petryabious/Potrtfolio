@@ -1,0 +1,207 @@
+.timeline {
+    width: 901px;
+    margin: 0 auto;
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+        width: 100%;
+        max-width: 774px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        width: unset;
+        max-width: 384px;
+    }
+}
+.timeline-item {
+    position: relative;
+    width: 50%;
+    text-align: right;
+    padding-right: 50px;
+    padding-bottom: 60px;
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+        padding-right: 34px;
+        padding-bottom: 65px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        text-align: left;
+        padding-right: 0;
+        // padding-left: 44px;
+        padding-left: 28px;
+        padding-bottom: 45px;
+        margin: 0 auto;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 767px) {
+        margin: 0;
+        width: 100%;
+        padding-left: 44px;
+    }
+
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+
+    & >*:not(:last-child){
+        /* Tablet */
+        @media (min-width: 1140px) {
+            margin-bottom: 8px;
+        }
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+
+        /* Tablet */
+        @media (max-width: 1139px) {
+            
+            font-size: 14px;
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+        /* Mobile XS */
+        @media (max-width: 767px) {
+            &:not(:last-child) {
+                margin-bottom: 7px;
+            }
+        }
+    }
+
+    span {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+
+        /* Tablet */
+        @media (max-width: 1139px) {
+            font-size: 14px;
+        }
+
+    }
+/* нечетные */
+    &:nth-child(even){
+        margin-left: auto;
+        text-align: left;
+        padding-right: 0;
+        padding-left: 50px;
+
+        /* Tablet */
+        @media (max-width: 1139px) {
+            padding-left: 34px;
+        }
+        /* Mobile */
+        @media (max-width: 899px) {
+            /* margin-left: 0; */
+            // padding-left: 44px;
+            padding-left: 28px;
+        }
+
+        @media (max-width: 767px) {
+            margin: 0;
+            width: 100%;
+            padding-left: 44px;
+        }
+    
+
+        &:before {
+            left: -17px;
+            /* Mobile */
+            @media (max-width: 899px) {
+                // left: 0;
+                left: -18px;
+            }
+            /* Mobile XS */
+            @media (max-width: 767px) {
+                left: 0;
+            }
+        }
+
+        &:after{
+            left: -2px;
+            /* Mobile */
+            @media (max-width: 899px) {
+                // left: 16px;
+                left: -2px;
+            }
+            /* Mobile XS */
+            @media (max-width: 767px) {
+                left: 16px;
+            }
+        }
+    }
+    
+}
+
+.timeline-item__title {
+    /* Tablet */
+    @media (max-width: 1139px) {
+        margin-bottom: 7px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        width: 246px;
+    }
+}
+
+
+/* рисование круга */
+.timeline-item::before {
+    content: "";
+    width: 34px;
+    height: 34px;
+    background: #FFFFFF;
+    border: 4px solid #E1EEF4;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: -17px;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        right: auto;
+        // left: 0;
+        left: -18px;
+    }
+    /* Mobile XS */
+    @media (max-width: 767px) {
+        left: 0;
+    }
+
+}
+/* рисование палки */
+.timeline-item::after {
+    content: "";
+    width: 4px;
+    background: #E1EEF4;
+    position: absolute;
+    top: 34px;
+    bottom: 0;
+    right: -2px;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        right: auto;
+        // left: 16px;
+        left: -2px;
+    }
+    /* Mobile XS */
+    @media (max-width: 767px) {
+        left: 16px;
+    }
+
+}
+
+.timeline-item:last-child::after{
+    display: none;
+}

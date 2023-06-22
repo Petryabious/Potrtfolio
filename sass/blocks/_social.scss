@@ -1,0 +1,24 @@
+.social {
+    display: flex;
+    column-gap: 30px;
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+        column-gap: 20px;
+    }
+
+    /* Mobile */
+
+    
+    img {
+        transition: all .3s ease-in;
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 899px) {
+            width: 38px;
+            height: 38px;
+        }
+    }
+}
